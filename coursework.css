@@ -177,6 +177,12 @@ li b:hover {
 }
 
 
+.QuizImages {
+  padding: 37.5px 20px;
+  align-items: center;
+}
+
+
 
 .footerGrid {
   display: grid;

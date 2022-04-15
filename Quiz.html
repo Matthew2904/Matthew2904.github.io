@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<!-- Heading of the website (includes link to external CSS stylesheet)-->
+<head>
+    <meta charset ="UTF-8" />
+    <title> Quiz - Web Technologies Coursework </title >
+    <link rel="stylesheet" href="coursework.css">
+</head>
+
+
+
+<!-- Link to external Javascript file for quiz functions-->
+<script defer src="quiz.JS"></script>
+
+<!-- Body of the website with the content of the page (link to JS function once loaded)-->
+<body  onload="checkCookie()">
+
+
+
+    <!-- Navigation Bar to all the other web pages within this website -->
+    <div class="navBar">
+    <nav>
+        <ul>
+            <li class="navbarlist"><a href="index.html"> <b>Home</b></a> </li>
+            <li class="navbarlist"><b class="active" href="#Quiz">Quiz</b></li>
+            <li class="navbarlist"><a href="Movies.html"> <b>Movies</b></a> </li>
+            <li style="float:right"><a href="Author.html"> <b>Author</b></a> </li>
+        </ul>
+    </nav>
+    </div>
+
+
+    <!-- Use of a grid to create a layout for page elements (three sections side by side with the middle section being the widest)-->
+    <div class="grid-container">
+
+          <!-- Grid Section 1 - with image -->
+        <div class="grid-item" id="grid-item1"> 
+            <img class="gridImages" src="venom.jpeg" alt="Image for Venom 2: Let there be Carnage" height="600" width = "240">
+        </div> 
+
+         <!-- Grid section 2 - with header and quiz-->
+        <div class="grid-item" id="grid-item2">
+            <h1> 2021 Movie Quiz - Quiz</h1>
+
+            <div class="container">
+
+                <div id="questionContainer" class="hide">
+                    <p id="counter"> The counter will replace this text</p>
+                    <div id="questionElement">Question</div>
+              
+                    <!--The results will be displayed here -->
+                    <div id="results" class="hide"> 
+
+                    <!-- Grid that is used to display the results of the quiz-->
+                    <div class="QuizGrid">
+                        <div class="result-item0"  ><p>Question</p></div> 
+                        <div class="result-item0"   ><p>Correct Answer</p> </div>
+                        <div class="result-item0"><p>Your Answer</p> </div>
+                        <div class="result-item1"><p>What is 2 + 2?</p> </div>
+                        <div class="result-item2"><p id="answer1">4</p> </div> 
+                        <div class="result-item3" id="qgrid1"><p>PlaceHolder</p> </div>
+                        <div class="result-item1"><p>Who is the best YouTuber?</p></div>
+                        <div class="result-item2"><p id="answer2">All</p></div> 
+                        <div class="result-item3" id="qgrid2"><p>PlaceHolder</p> </div>
+                        <div class="result-item1"><p> Is web development fun?</p> </div>
+                        <div class="result-item2" ><p  id="answer3">YES!!!</p></div> 
+                        <div class="result-item3"id="qgrid3"><p>PlaceHolder</p> </div>
+                        <div class="result-item1"><p>What is 4 * 2?</p> </div>
+                        <div class="result-item2"><p  id="answer4">8</p> </div>
+                        <div class="result-item3" id="qgrid4"><p>PlaceHolder</p> </div>
+                    </div>
+                </div>
+
+                <!-- Grid that is used to display the leaderboard of the quiz-->
+                <div id="leaderboardGrid" style="display: none;">
+                    <div class="l-category"><p>Name</p></div> 
+                    <div class="l-category" ><p>Score</p> </div>
+                    <div class="l-item" id="p0"><p ></p>person1</div>
+                    <div class="l-item" id="hs0"><p>score1</p></div>
+                    <div class="l-item" id="p1"><p>person2</p></div> 
+                    <div class="l-item" id="hs1"><p>score2</p></div>
+                    <div class="l-item" id="p2"><p>person3</p></div>
+                    <div class="l-item" id="hs2"><p>score3</p></div> 
+                    <div class="l-item" id="p3"><p>person4</p> </div>
+                    <div class="l-item" id="hs3"><p>score4</p> </div>
+                    <div class="l-item" id="p4"><p>person5</p></div> 
+                    <div class="l-item" id="hs4"><p>score5</p></div>
+                </div>
+
+                <!-- Grid that is used to display the multiple choice options to the user-->
+                  <div id="options" class="btn-grid">
+                    <!-- Buttons will be created through JS function and placed in here-->
+                  </div>
+                </div>
+
+                <!-- Buttons that are used so the user can navigate through the quiz-->
+                <div class="controls">
+                  <button id="startBtn" class="start-btn btn">Start</button>
+                  <button id="nextBtn" class="next-btn btn hide">Next</button>
+                  <button id="resultBtn" class="btn hide">Results</button>
+                  <button id="leaderboardBtn" class="next-btn btn hide">Leaderboard</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Grid section 3 - with image -->
+        <div class="grid-item" id="grid-item3">
+            <img  class="gridImages" src="eternals1.webp" alt="Image for Marvel's Eternals" height="600" width = "240">
+        </div>  
+    </div>
+</body>
+
+
+
+
+ <!-- Footer of the website-->
+ <footer>
+    <!-- Use of a gird to create a simple layout for the webiste footer-->
+    <div class="footerGrid">
+        <div class="footer-item"> <img src="icons8-person-64.png" class="footerImage"> </div> 
+        <div class="footer-item">Matthew Gibson</div>
+        <div class="footer-item"></div> 
+        <div class="footer-item"> <img src="icons8-organization-50.png"  class="footerImage"></div>
+        <div class="footer-item">Edinburgh Napier University</div> 
+        <div class="footer-item"><img src="icons8-phone-50.png"  class="footerImage"></div>
+        <div class="footer-item">(+44)7491160841</div> 
+        <div class="footer-item"></div> 
+        <div class="footer-item"><img src="icons8-class-64.png"  class="footerImage"></div>
+        <div class="footer-item">Web Technologies</div>
+        <div class="footer-item"><img src="icons8-mail-50.png"  class="footerImage"></div>
+        <div class="footer-item">40494132@live.napier.ac.uk</div>
+        <div class="footer-item"></div>
+        <div class="footer-item"><img src="icons8-location-50.png"  class="footerImage" ></div>
+        <div class="footer-item">10 Colinton Road, Edinburgh</div>
+
+    </div>
+
+</footer>
+</html>

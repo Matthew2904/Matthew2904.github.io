@@ -2,38 +2,43 @@
 const questions = [
   {
     id: 'qgrid1',
-    question: 'What is 2 + 2?',
+    question: 'Who was the lead actor in Dune (2021)?',
     answers: [
-      { text: '4', correct: true },
-      { text: '22', correct: false }
+      { text: 'Timothee Chalamet', correct: true },     
+       { text: 'Samuel L. Jackson', correct: false },
+      { text: 'Ryan Gosling', correct: false },
+      { text: 'Matthew Gibson', correct: false }
     ]
   },
   {
     id: 'qgrid2',
-    question: 'Who is the best YouTuber?',
+    question: 'What was the highest grossing movie (globally) in 2021?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Justice Leage: Snyder Cut', correct: false },
+       { text: 'Spider-Man: No Way Home', correct: true },
+      { text: 'No Time to Die', correct: false },
+      { text: 'Cyrano', correct: false }
     ]
   },
   {
     id: 'qgrid3',
-    question: 'Is web development fun?',
+    question: "Who made an apperance in the end credits of Eternals as Thanos's brother?",
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Brad Pitt', correct: false },
+      { text: 'Daisy Jones', correct: false },
+      { text: 'Harry Styles', correct: true },
+      { text: 'Kanye West', correct: false }
     ]
   },
   {
     id: 'qgrid4',
-    question: 'What is 4 * 2?',
+    question: "What was Netflix's most watched movie of 2021?",
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: "Don't Loop Up", correct: false },
+      { text: 'Red Notice', correct: true },
+      { text: 'Free Guy', correct: false },
+      { text: 'Black Widow', correct: false }
+      
     ]
   }
 ]

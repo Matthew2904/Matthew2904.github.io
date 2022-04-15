@@ -210,7 +210,7 @@ li b:hover {
 
 
 .container {
-  height: 475px;
+  height: 500px;
   background-color: white;
   padding: 10px;
   border: 5px black solid;
@@ -295,7 +295,7 @@ li b:hover {
 
 .result-item0, .result-item1, .result-item2, .result-item3, .l-item, .l-category {
   border: 3px solid black;
-  padding: 5px; 
+  padding: 4px; 
   font-size: 15px;
   color: black;
   font-weight: bold;
@@ -372,6 +372,7 @@ li b:hover {
 
 #options {
   margin-top: 50px;
+
 }  
 
 

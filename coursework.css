@@ -178,7 +178,11 @@ li b:hover {
 
 
 .QuizImages {
+<<<<<<< Updated upstream
   padding: 37px 20px;
+=======
+  padding: 40px 20px;
+>>>>>>> Stashed changes
   align-items: center;
 }
 
@@ -216,7 +220,7 @@ li b:hover {
 
 
 .container {
-  height: 500px;
+  height: 525px;
   background-color: white;
   padding: 10px;
   border: 5px black solid;
@@ -291,6 +295,8 @@ li b:hover {
   
   
 .QuizGrid {
+  width: 800px;
+  justify-content: center;
   display: grid;
   grid-template-columns: 50% 25% 25%; 
   background-color:white;
@@ -356,12 +362,22 @@ li b:hover {
 
 #counter{
   font-weight: bold;
+  margin-left: 20px;
+  float: left;
+
+}
+
+#questionNumber{
+ font-weight: bold;
+ margin-right: 20px;
+ float: right;
 }
 
 
 
 #leaderboardGrid {
   display: grid;
+  margin-top: 20px;
   grid-template-columns: 50% 50%; 
   background-color:white;
   border: 3px solid black;

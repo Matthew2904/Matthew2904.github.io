@@ -57,6 +57,7 @@ const questionContainer = document.getElementById('questionContainer');
 const questionElement = document.getElementById('questionElement');
 const Options = document.getElementById('options');
 const counterBox = document.getElementById("counter");
+const questionNumber = document.getElementById("questionNumber");
 const resultBtn = document.getElementById("resultBtn");
 const resultbox = document.getElementById("results");
 const q1 = document.getElementById("qgrid1");
@@ -176,7 +177,8 @@ function displayQuestion(question)
     }
 
     //display the the users score
-    counterBox.innerText = String("Score: " + counter +  "/" + currentIndex);  
+    counterBox.innerText = String("Score: " + counter +  "/" + currentIndex );  
+    questionNumber.innerText= String("Question: " + (currentIndex+1) + "/" + randomisedOrder.length);
 
     // add the question id to the button / options class list
     button.classList.add(question.id);
